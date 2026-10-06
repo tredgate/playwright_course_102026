@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "es2020",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
+    "types": ["@playwright/test", "node"],
+    "resolveJsonModule": true
+  },
+  "include": ["src", "tests", "*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
