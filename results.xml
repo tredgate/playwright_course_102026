@@ -1,0 +1,6 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="0.5680089999996125">
+<testsuite name="exercises/api_asserts_exercise.spec.ts" timestamp="2026-10-08T11:28:51.495Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.149" errors="0">
+<testcase name="Exercise: Api Asserts" classname="exercises/api_asserts_exercise.spec.ts" time="0.149">
+</testcase>
+</testsuite>
+</testsuites>
