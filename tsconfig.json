@@ -12,6 +12,6 @@
     "types": ["@playwright/test", "node"],
     "resolveJsonModule": true
   },
-  "include": ["src", "tests", "*.ts"],
+  "include": ["src", "tests", "*.ts", "pages"],
   "exclude": ["node_modules", "dist"]
 }

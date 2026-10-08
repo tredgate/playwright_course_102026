@@ -1,6 +1,150 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="0.5680089999996125">
-<testsuite name="exercises/api_asserts_exercise.spec.ts" timestamp="2026-10-08T11:28:51.495Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.149" errors="0">
-<testcase name="Exercise: Api Asserts" classname="exercises/api_asserts_exercise.spec.ts" time="0.149">
+<testsuites id="" name="" tests="2" failures="2" skipped="0" errors="0" time="1.667398">
+<testsuite name="visual.spec.ts" timestamp="2026-10-08T14:51:12.297Z" hostname="chromium" tests="1" failures="1" skipped="0" time="1.005" errors="0">
+<testcase name="Visual Test" classname="visual.spec.ts" time="1.005">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests/visual.spec.ts-snapshots/login-page-chromium-darwin.png]]
+
+[[ATTACHMENT|test-results/visual-Visual-Test-chromium/login-page-actual.png]]
+
+[[ATTACHMENT|test-results/visual-Visual-Test-chromium/login-page-diff.png]]
+
+[[ATTACHMENT|test-results/visual-Visual-Test-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/visual-Visual-Test-chromium/error-context.md]]
+
+[[ATTACHMENT|test-results/visual-Visual-Test-chromium/trace.zip]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveScreenshot(expected) failed" type="expect.toHaveScreenshot">
+<![CDATA[  [chromium] › visual.spec.ts:3:1 › Visual Test ────────────────────────────────────────────────────
+
+    Error: expect(page).toHaveScreenshot(expected) failed
+
+      1057 pixels (ratio 0.01 of all image pixels) are different.
+
+      Snapshot: login_page.png
+
+    Call log:
+      - Expect "toHaveScreenshot(login_page.png)" with timeout 12000ms
+        - verifying given screenshot expectation
+      - taking page screenshot
+        - disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - 1057 pixels (ratio 0.01 of all image pixels) are different.
+      - waiting 100ms before taking screenshot
+      - taking page screenshot
+        - disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - captured a stable screenshot
+      - 1057 pixels (ratio 0.01 of all image pixels) are different.
+
+
+      5 |   await page.locator("#username").fill("PETR");
+      6 |   await page.locator("#password").fill("123456");
+    > 7 |   await expect(page).toHaveScreenshot("login_page.png");
+        |                      ^
+      8 | });
+      9 |
+        at /Users/petrfifka/GitProjects/playwright_course_102026/tests/visual.spec.ts:7:22
+
+    attachment #1: login-page (image/png) ──────────────────────────────────────────────────────────
+    Expected: visual.spec.ts-snapshots/login-page-chromium-darwin.png
+    Received: ../test-results/visual-Visual-Test-chromium/login-page-actual.png
+    Diff:     ../test-results/visual-Visual-Test-chromium/login-page-diff.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/visual-Visual-Test-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/visual-Visual-Test-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/visual-Visual-Test-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/visual-Visual-Test-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="visual.spec.ts" timestamp="2026-10-08T14:51:12.297Z" hostname="webkit" tests="1" failures="1" skipped="0" time="1.229" errors="0">
+<testcase name="Visual Test" classname="visual.spec.ts" time="1.229">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests/visual.spec.ts-snapshots/login-page-webkit-darwin.png]]
+
+[[ATTACHMENT|test-results/visual-Visual-Test-webkit/login-page-actual.png]]
+
+[[ATTACHMENT|test-results/visual-Visual-Test-webkit/login-page-diff.png]]
+
+[[ATTACHMENT|test-results/visual-Visual-Test-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/visual-Visual-Test-webkit/error-context.md]]
+
+[[ATTACHMENT|test-results/visual-Visual-Test-webkit/trace.zip]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveScreenshot(expected) failed" type="expect.toHaveScreenshot">
+<![CDATA[  [webkit] › visual.spec.ts:3:1 › Visual Test ──────────────────────────────────────────────────────
+
+    Error: expect(page).toHaveScreenshot(expected) failed
+
+      445 pixels (ratio 0.01 of all image pixels) are different.
+
+      Snapshot: login_page.png
+
+    Call log:
+      - Expect "toHaveScreenshot(login_page.png)" with timeout 12000ms
+        - verifying given screenshot expectation
+      - taking page screenshot
+        - disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - 445 pixels (ratio 0.01 of all image pixels) are different.
+      - waiting 100ms before taking screenshot
+      - taking page screenshot
+        - disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - captured a stable screenshot
+      - 445 pixels (ratio 0.01 of all image pixels) are different.
+
+
+      5 |   await page.locator("#username").fill("PETR");
+      6 |   await page.locator("#password").fill("123456");
+    > 7 |   await expect(page).toHaveScreenshot("login_page.png");
+        |                      ^
+      8 | });
+      9 |
+        at /Users/petrfifka/GitProjects/playwright_course_102026/tests/visual.spec.ts:7:22
+
+    attachment #1: login-page (image/png) ──────────────────────────────────────────────────────────
+    Expected: visual.spec.ts-snapshots/login-page-webkit-darwin.png
+    Received: ../test-results/visual-Visual-Test-webkit/login-page-actual.png
+    Diff:     ../test-results/visual-Visual-Test-webkit/login-page-diff.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/visual-Visual-Test-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/visual-Visual-Test-webkit/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/visual-Visual-Test-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/visual-Visual-Test-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 </testcase>
 </testsuite>
 </testsuites>
