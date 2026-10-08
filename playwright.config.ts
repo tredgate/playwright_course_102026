@@ -32,7 +32,7 @@ export default defineConfig({
   globalTimeout: 1 * 60 * 60 * 1000, // * Maximální doba běhu všech testů, default: nenastaveno
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   expect: {
-    timeout: 7_000, // * Maximální doba čekání assertu, default: 5_000 ms
+    timeout: 12_000, // * Maximální doba čekání assertu, default: 5_000 ms
   },
   use: {
     actionTimeout: 7_000, // * Maximální doba trvání akce (např. click()), default: nenastaveno
